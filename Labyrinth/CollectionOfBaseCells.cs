@@ -28,5 +28,7 @@ namespace Labyrinth
             }
             return baseCells[index];
         }
+        public int Count => baseCells.Count;
+        public void Clear() => baseCells.Clear();  
     }
 }
