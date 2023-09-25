@@ -16,20 +16,20 @@ namespace LabyrinthTests
         {
             // Test making a BaseCell with empty constructor.
             // Arrange
-            bool expectedOpenNorth = false, expectedOpenSouth = false, expectedOpenWest = false, expectedOpenEast = false;
+            bool expectedOpensToNorth = false, expectedOpensToSouth = false, expectedOpensToWest = false, expectedOpensToEast = false;
 
             // Act
             var baseCell = new BaseCell();
-            var actualOpenNorth = baseCell.OpenNorth;
-            var actualOpenSouth = baseCell.OpenSouth;
-            var actualOpenWest = baseCell.OpenWest;
-            var actualOpenEast = baseCell.OpenEast;
+            var actualOpensToNorth = baseCell.OpensToNorth;
+            var actualOpensToSouth = baseCell.OpensToSouth;
+            var actualOpensToWest = baseCell.OpensToWest;
+            var actualOpensToEast = baseCell.OpensToEast;
 
             // Assert
-            Assert.Equal(expectedOpenNorth, actualOpenNorth);
-            Assert.Equal(expectedOpenSouth, actualOpenSouth);
-            Assert.Equal(expectedOpenWest, actualOpenWest);
-            Assert.Equal(expectedOpenEast, actualOpenEast);
+            Assert.Equal(expectedOpensToNorth, actualOpensToNorth);
+            Assert.Equal(expectedOpensToSouth, actualOpensToSouth);
+            Assert.Equal(expectedOpensToWest, actualOpensToWest);
+            Assert.Equal(expectedOpensToEast, actualOpensToEast);
 
         }
 
@@ -38,20 +38,20 @@ namespace LabyrinthTests
         {
             // Test making a BaseCell with all direktions true.
             // Arrange
-            bool expectedOpenNorth = true, expectedOpenSouth = true, expectedOpenWest = true, expectedOpenEast = true;
+            bool expectedOpensToNorth = true, expectedOpensToSouth = true, expectedOpensToWest = true, expectedOpensToEast = true;
 
             // Act
-            var baseCell = new BaseCell(openEast: expectedOpenEast,openNorth:expectedOpenNorth,openSouth:expectedOpenSouth,openWest:expectedOpenWest);
-            var actualOpenNorth = baseCell.OpenNorth;
-            var actualOpenSouth = baseCell.OpenSouth;
-            var actualOpenWest = baseCell.OpenWest;
-            var actualOpenEast = baseCell.OpenEast;
+            var baseCell = new BaseCell(opensToEast: expectedOpensToEast,opensToNorth:expectedOpensToNorth,opensToSouth:expectedOpensToSouth,opensToWest:expectedOpensToWest);
+            var actualOpensToNorth = baseCell.OpensToNorth;
+            var actualOpensToSouth = baseCell.OpensToSouth;
+            var actualOpensToWest = baseCell.OpensToWest;
+            var actualOpensToEast = baseCell.OpensToEast;
 
             // Assert
-            Assert.Equal(expectedOpenNorth, actualOpenNorth);
-            Assert.Equal(expectedOpenSouth, actualOpenSouth);
-            Assert.Equal(expectedOpenWest, actualOpenWest);
-            Assert.Equal(expectedOpenEast, actualOpenEast);
+            Assert.Equal(expectedOpensToNorth, actualOpensToNorth);
+            Assert.Equal(expectedOpensToSouth, actualOpensToSouth);
+            Assert.Equal(expectedOpensToWest, actualOpensToWest);
+            Assert.Equal(expectedOpensToEast, actualOpensToEast);
 
         }
         

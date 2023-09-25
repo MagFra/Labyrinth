@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Labyrinth
 {
+    /// <summary>
+    /// Contains a collection of, in total 16, base Cells. Each Cell has a unique, binary representation of directions to, which the player, can move, to adjacent Cells.
+    /// </summary>
     public class CollectionOfBaseCells
     {
         private static CollectionOfBaseCells? collectionOfBaseCells;
